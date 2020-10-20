@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Grail Page</title>
+        <link rel="stylesheet" href="../css/main-style.css">
+    </head>
+    <body>
+        <header class="main-page-header background-gray-color">
+            <nav class="main-menu-inner-area page-container-area">
+                <ul>
+                    <li>
+                        <a href="https://www.nasa.gov/" target="blank">NASA</a>
+                    </li>
+                    <li>
+                        <a href="#imageArea">Internal Link to image</a>
+     
+                    </li>
+                    <li>
+                        <a href="../index.html">Home</a>
+     
+                     </li>
+                    <li>
+                        <a href="./about-page.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                    <li class="active-menu">
+                        <a href="#">Grail</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+       <header class="page-main-banner">
+        <div class="page-container-area main-banner-inner-area">
+            <h4>Welcome To My Page</h4>
+                <a href="#picture-area">
+                    <div class="arrow-down">&dArr;</div>
+                </a>
+        </div>
+       </header>
+
+        <main class=" page-body-wrapper page-container-area">
+         <nav class="left-page-menu background-purple-color">
+             <h3>Nav</h3>
+             <ul>
+                 <li><a href="#">Target 1</a></li>
+                 <li><a href="#">Target 2</a></li>
+                 <li><a href="#">Target 3</a></li>
+             </ul>
+            </nav>
+            <section class="main-page-content-area">
+                <div class="main-page-apper-columns">
+                    <div>#1</div>
+                    <div>#2</div>
+                    <div>#3</div>
+                </div>
+                <article class="background-blue-color">
+                    <h3>Middle Content</h3>
+                    <img class="test-picture blur-picture" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+                    <img class="test-picture sepia-picture grayscale-picture" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+                    <img class="test-picture hue-color-picture hue-rotate-picture" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+                    <p>Scale-Transform</p>
+                    <img class="test-picture rotate-style" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+               
+                    <div class="test-picture advanced-animation"></div>
+               
+                    <a id="picture-area"></a>
+                </article>
+                <article>
+                    <h3>Middle Content 2</h3>
+
+                    <ul class="strips-list">
+                        <li>Iteam text 1</li>
+                        <li>Iteam text 1</li>
+                        <li>Iteam text 1</li>
+                        <li>Iteam text 1</li>
+                        <li>Iteam text 1</li>
+                    </ul>
+                </article>
+            </section>
+            <aside class="right-product-adwertisement-area background-green-color">
+                <h3>Aside ADW area</h3>
+            </aside>
+        </main>
+        
+        /* --Cube-- */
+
+        <div class="cube-container">
+            <div id="cube">
+              <figure class="face front">1</figure>
+              <figure class="face back">2</figure>
+              <figure class="face left">3</figure>
+              <figure class="face right">4</figure>
+              <figure class="face top">5</figure>
+              <figure class="face bottom">6</figure>
+            </div>
+            </div>
+
+        <footer class="page-footer">
+            <div class="page-container-area">
+            <h3>Contacts Footer</h3>
+            </div>
+        </footer>
+    </body>
+</html>
+
+
+       /* --CSS-- */
+
+
+
+ @import "./main-fonts.css";
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,100;0,200;1,100&display=swap');
+
+:root {
+    --main-black-color: #000000;
+    --main-gray-color: #484849ef;
+    --main-purple-color: #8e4bfae0;
+
+    --footer-default-height: 150px;
+    --main-page-height: 100vh;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: 'Piazzolla', serif;
+}
+
+body {
+    background-image: url("https://st3.depositphotos.com/14490296/18463/v/1600/depositphotos_184633056-stock-illustration-fizzing-air-bubbles-on-white.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+p{ 
+    color:  #06b3f8; 
+    font-size: 20px;
+}
+h1 {color: brown;}
+h2, h3, h4{
+    color: brown; text-transform: uppercase;
+    }
+    main section p.blok-type-left {
+        column-count: 3;
+    }
+
+
+    .page-main-banner {
+        background: #eeeeee;
+        background-image: url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+        background-size: cover;
+        background-position: bottom center;
+        background-attachment: fixed;
+        height: 500px;
+        overflow: auto;
+        }
+        .page-main-banner .main-banner-inner-area {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background: rgba( 250, 250, 250, 0.5);
+        }
+
+
+        .cube-container {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            perspective: 1000px;
+            margin: 0 auto;
+          }
+          #cube {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transform: translateZ( -100px ) rotateZ(45deg) rotateX(45deg);
+            animation: spin 5s infinite linear;
+          }
+          @keyframes spin {
+            0% { transform: translateZ( -100px ) rotateY(360deg) rotateZ(0deg) rotateX(45deg) }
+            50% { transform: translateZ( -100px ) rotateY(180deg) rotateZ(180deg) rotateX(45deg) }
+            100% { transform: translateZ( -100px ) rotateY(0deg) rotateZ(360deg) rotateX(45deg) }
+          }
+          #cube figure {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            line-height: 200px;
+            background: url(https://img.freepik.com/free-vector/colorful-leaves-hand-drawn-tree-life_23-2148696817.jpg?size=338&ext=jpg) ;
+          font-size: 120px;
+          font-weight: bold;
+          color: #fff;
+          text-align: center;
+            border: 1px dotted blue;
+            backface-visibility: hidden;
+          }
+          #cube .front  { transform: rotateY(   0deg ) translateZ( 100px ); }
+          #cube .back   { transform: rotateX( 180deg ) translateZ( 100px ); }
+          #cube .right  { transform: rotateY(  90deg ) translateZ( 100px ); }
+          #cube .left   { transform: rotateY( -90deg ) translateZ( 100px ); }
+          #cube .top    { transform: rotateX(  90deg ) translateZ( 100px ); }
+          #cube .bottom { transform: rotateX( -90deg ) translateZ( 100px ); }
+
+          
+
+    .page-text-style
+     {
+     color: #00ff73fb;
+     font-size: 18px;
+     font-weight: bold;
+     }
+     .blok-type-left {
+         width: 30%;
+         background-color: #6615e7a9;
+         float: left;
+     }
+     .blok-type-right {
+         width: 50%;
+         background-color: #000000;
+         float: right;
+     }
+    .cleared-float {
+         clear: both;
+     }
+     /*page cards*/
+     .cards-container div.card {
+         width: calc(100% / 3);
+         height: 200px;
+         min-height: 200px;
+         background: #0084ff;
+         border: 1px solid #000000;
+         box-sizing: border-box;
+         padding: 20px;
+     }
+     .card .card-central-style {
+         padding: 50px 10px 15px 30px !important;
+     }
+     .cards-container .card .btn {
+         border: 1px solid white;
+         background: none;
+         border-radius: 50px;
+         padding: 10px;
+         color: #ffffff;
+         cursor: pointer;
+     }
+
+     /* css for html Grail*/
+
+     .background-purple-color {
+         background: #6615e7a9;
+         padding: 10px;
+  }
+  .background-gray-color {
+    background: #8a8989;}
+    .background-blue-color {
+        background: #10acdb;}
+
+        .background-green-color {
+            background: #00ff40b9;
+        }
+
+        main, section.main-page-content-area {
+           padding: 60px;
+        }
+
+        .page-container-area {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-page-header {
+            overflow: auto;
+            position: fixed;
+            width: 100%;
+            z-index: 5;
+        }
+
+   .main-page-header nav ul{
+       display: flex;
+       list-style: none;
+       margin: 0px;
+   }
+   .main-page-header nav ul li {
+       padding: 20px;
+       transition: background 0.5s linear;
+   }
+   .main-page-header nav ul li:hover {
+       background: #ffffff;
+   }
+   .main-page-header nav ul li:hover a{
+       color: palevioletred;
+   }
+
+   .main-page-header nav ul li.active-menu {
+       background: plum;
+   }
+
+   .main-page-header nav ul a {
+       text-decoration: none;
+       padding: 10px;
+       color: #971b1b;
+       transition: color 0.5s linear;
+   }     
+
+   .page-body-wrapper {
+       display: flex;
+       min-height: var(--main-page-height);
+   }
+   .page-body-wrapper .left-page-menu,
+    .page-body-wrapper .right-product-adwertisement-area
+   {
+       width: 20%;
+   }
+   .page-body-wrapper section.main-page-content-area {
+       width: 60%;
+       background: #ffffff;
+       padding: 10px;
+   }
+
+   .page-body-wrapper section.main-page-content-area .main-page-apper-columns {
+       display: flex;
+       justify-content: space-around;
+   }
+    .left-page-menu ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    .left-page-menu ul li{
+        padding: 10px 0px 10px 0px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px solid purple;
+        transition: background 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .left-page-menu ul li:hover {
+        background: #ffffff;
+    }
+
+    .test-picture {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        transition: 0.5s linear;
+    }
+    .blur-picture:hover {
+        filter: none;
+    }
+    .blur-picture {
+         filter: blur(5px);}
+    .sepia-picture:hower {
+        filter: none;
+    }
+    .sepia-picture {
+        filter: grayscale(1);
+    }
+    .hue-color-picture:hower {
+        filter: none ;
+    }.hue-color-picture {
+        filter: saturate(8) ;
+    }
+    .scale-this-picture,
+    .rotate-style {
+        transition: .5s linear ;
+    }
+    .scale-this-picture:hover {
+      transform: scale(1.2);
+    }
+  
+    .rotate-style:hover {
+        transform: rotateX(180deg);
+    }
+    .advanced-animation {
+        height: 300px;
+        width: 500px;
+        background-image: url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80) ;
+        background-size: 100%;
+        background-position-x: 0px;
+        background-position-y: 0px;
+        animation: city-live 3s linear forwards /*infinite*/;
+      /* animation-name: city-live;
+       animation-duration: 4s;*/
+    }
+     @keyframes city-live {
+        0% {background-position-y: 0px;
+            background-position-x: 0px;}
+        60% {transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+        100% { background-position-y: 500px;
+            background-position-x: 500px;
+            transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);}
+     }
+
+
+    .strips-list {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+    }
+    .strips-list li{
+        padding: 10px;
+        background: #971b1b;
+    }
+    .strips-list li:nth-child(even) {
+        background: #ffffff;
+    }
+
+   .page-footer {
+       background: var(--min-black-color);
+       min-height: var(--footer-default-height);
+   }
+
+
+   /* Responsive Mediaquery selections */
+
+   @media screen and (max-width: 800px) {
+        .background-purple-color {
+            background: #8830dbd5; 
+        }
+    }
+
+   @media screen and (max-width: 650px){ 
+    .main-page-header {
+        position: relative;
+    }
+    .main-page-header .main-menu-inner-area ul,
+    .page-body-wrapper {
+         display: block;
+    }
+    .page-body-wrapper .left-page-menu,
+    .page-body-wrapper .right-product-adwertisement-area,
+    .page-body-wrapper section.main-page-content-area {
+        width: 100%;
+    }
+    .background-purple-color {
+        background: #eb59f8;
+    }
+    }
+
+  
